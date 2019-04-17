@@ -1,0 +1,60 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxiHqzt19xNykdRom9SCGY5LJqRUWRXAEL7U028jttjwSxiqiq_Q");
+    ;
+}
+main {
+    background-color: bisque;
+    /* opacity: 0.9; */
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 60%;
+    margin: auto;
+}
+
+header{
+    text-align: center;
+}
+
+#title {
+    border: 2px solid grey;
+    border-radius: 30px;
+    color: brown
+}
+
+p, label{
+    color: brown;
+}
+
+#personal-info-section, #sports-section{
+    margin: 20px
+}
+#social, #contact, #bios {
+    border: dotted 2px gray;
+    border-radius: 10px;
+}
+
+label, input {
+    margin: 10px;
+}
+
+input{
+    padding: 2px;
+    background-color: transparent;
+    margin-right: auto;
+}
+#dropdown {
+    padding: 0px;
+    margin-top: 0px;
+}
+textarea {
+    color: darkblue;
+    text-align: center;
+    text-justify: center;
+    background-color: transparent;
+}
+#textarea {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}

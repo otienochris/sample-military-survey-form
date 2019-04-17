@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">MILITARY SURVEY FORM.</h1>
+            <p id="description">Please, correctly complete this form to the best of your knowledge</p>
+        </header>
+        <div>
+            <form action="" id="survey-form" >
+
+                <!-- section containing the personal information -->
+                <fieldset id="personal-info-section">
+                    <legend>Personal information</legend>
+                    <fieldset id="bios">
+                        <legend>bios:</legend>
+                        <label for="name" id="name-label">Name:
+                            <input id="name" type="text" placeholder="First name" required>
+                            <input id="name" type="text" placeholder="Middle name" required>
+                            <input id="name" type="text" placeholder="Last name" required>
+                        </label>
+                        <br>
+                        <label for="DOB">Date of birth:
+                            <input type="date">
+                        </label>
+                    </fieldset>
+                    <fieldset id="contact">
+                        <legend>contact:</legend>
+                        <label for="email" id="email-label">Email:
+                            <input id="email" type="email" placeholder="Enter your email here ..." required>
+                        </label>
+                        <br>
+                        <label for="number" id="number-label">Number:
+                            <input id="number" type="number" min="700000000" max="999999999999" placeholder="Enter your number here  ...">
+                        </label>
+                    </fieldset>
+                    <fieldset id="social">
+                        <legend>social:</legend>
+                        <label for="marital">Marital status:
+                            <select id="marital">
+                                <option value="Single">Single</option>
+                                <option value="Dating">Dating</option>
+                                <option value="Married">Married</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <!-- dropdown for marital status bellow -->
+                </fieldset>
+
+                <!-- section containing the educational qualification -->
+                <fieldset id="education-section:">
+                    <legend>Education background</legend>
+                    <p>Check your level of education from bellow:</p>
+                    <label for="primary"><input type="radio" name="level" checked>primary</label>
+                    <label for="secondary"><input type="radio" name="level">secondary</label>
+                    <label for="tertiary"><input type="radio" name="level">tertiary</label>
+                </fieldset>
+
+                <!-- section containing the extra-curriculum activities -->
+                <fieldset id="sports-section">
+                    <legend>Sports section: </legend>
+                    <p>Which sport activity/activities do you participate in?</p>
+                    <div style="display: grid;">
+                        <label for="football"><input type="checkbox" name="sports" value="football">football</label>
+                        <label for="marathon"><input type="checkbox" name="sports" value="marathon" checked>marathon</label>
+                        <label for="swimming"><input type="checkbox" name="sports" value="swimming">swimming</label>
+                        <label for="others"><input type="checkbox">other sport</label>
+                    </div>
+                </fieldset>
+
+                <div style="display: flex;"> 
+                    <p>Are you currently serving in the United States Military, or not?</p>
+                    <select id="dropdown">
+                        <option value="yes">Yes, I am.</option>
+                        <option value="no">No, I am not.</option>
+                    </select>
+                </div>
+
+                <div id="textarea">
+                    <textarea name=""  cols="30" rows="10" placeholder="Any comments or suggestions?..."></textarea>
+                </div>
+
+                <button id="submit" type="submit">submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
